@@ -52,8 +52,10 @@ sendbtn.onclick = (e)=>{
          
         emailjs.send('service_hd5qbz2', 'template_i2zy4a9', templateParams)
         .then(function(response) {
+            success()
             console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
+            error()
             console.log('FAILED...', error);
         });
     }
