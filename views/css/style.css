@@ -480,3 +480,60 @@ body{
     font-weight:100;
 
 }
+
+
+
+
+
+
+/* About Page Content */
+.section .about-cont{
+    display:flex;
+    width:100%;
+    height:auto;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+.section .about-cont .img-cont{
+    width:50%;
+    margin:15px auto;
+    background: #f7f8fc;
+}
+.section .about-cont .about-main{
+    width:50%;
+    margin:20px auto;
+}
+.section .about-cont .about-main .head{
+    padding:12px;
+}
+.section .about-cont .about-main .body{
+    padding:12px;
+}
+.section .about-cont .about-main .body .blockquote{
+    background:#16161d;
+    padding:5px;
+    border-left:5px solid #0084ff;
+    font-style: italic;
+    font-size:15px;
+    color:#fff;
+}
+.section .about-cont .about-main .body p{
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.section .main-cont .info{
+    padding:12px;
+    margin:0px auto;
+    background: #16161d;
+    color:#fff;
+    width:100%;
+}
+.section .main-cont .info .btn{
+    background: #0084ff;
+    color:#fff;
+    width:130px;;
+    border-radius: 30px;
+}

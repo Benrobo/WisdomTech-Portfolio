@@ -6,7 +6,6 @@ function toggleNav(){
         sidebar.classList.toggle("slide")
     }
 }
-toggleNav()
 
 
 $(document).ready(function(){
