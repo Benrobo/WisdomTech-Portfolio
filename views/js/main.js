@@ -40,24 +40,20 @@ let sendbtn = document.querySelector(".contact-btn")
 sendbtn.onclick = (e)=>{
     e.preventDefault();
 
-    if(!validate(username.value, useremail.value, usermsg.value)){
-        error()
+    if(username.value == "" || useremail.value == "" || usermsg.value == ""){
+       return  error()
     }else{
-        var templateParams = {
-            name: username.value,
-            notes:usermsg.value,
-        };
 
-        console.log(templateParams)
-         
-        emailjs.send('service_hd5qbz2', 'template_i2zy4a9', templateParams)
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
+  
+        if(emailjs.send("service_hd5qbz2","template_73xyntq",{
+            from_name: username.value,
+            to_name: "Wisdom Tech Site",
+            message: usermsg.value,
+        })){
             return success()
-        }, function(error) {
-            error()
-            console.log('FAILED...', error);
-        });
+        }else{
+            return error()
+        }
     }
 }
 
