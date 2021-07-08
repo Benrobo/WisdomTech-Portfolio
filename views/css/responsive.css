@@ -1,0 +1,87 @@
+@media (min-width: 576px){
+    .navbar .btn-toggler{
+        display:none !important;
+    }
+    .navbar .sidebar{
+        display:none !important;
+    }
+
+    /* section */
+    /* .section .intro-cont{
+        width:100% !important;
+        background:red;
+    }
+    .section .intro-cont .txt-cont{
+        width:50% !important;
+    }
+    .section .intro-cont .img-cont{
+        width:50% !important;  
+        text-align: center !important;
+    }
+    .section .intro-cont .img-cont .img2{
+        top:10rem !important;
+        left:50px !important;
+    } */
+}
+
+@media (max-width: 768px){
+    .navbar .main-ul{
+        display:none !important;
+    }
+    .navbar .btn-toggler{
+        display:block !important;
+    }
+    .navbar .sidebar{
+        display:block !important;
+    }
+
+    /* section */
+    .section .intro-cont{
+        width:100% !important;
+        display:block !important;
+    }
+    .section .intro-cont .txt-cont{
+        width:100% !important;
+    }
+    .section .intro-cont .img-cont{
+        width:50% !important;
+        text-align: center !important;
+    }
+    .section .intro-cont .img-cont .img2{
+        top:10rem !important;
+        left:4rem !important;
+    }
+
+    /* about us */
+    .section .about-us .content .img-cont{
+        width:100% !important; 
+    }
+    .section .about-us .content .txt{
+        width:100% !important;
+    }
+
+    /* team and competence */
+    .section .team-cont .boxes .box{
+        width:100% !important;
+    }
+
+    /* showcase area / projects */
+    .projects-cont .main-cont .boxes  .img-cont .pic{
+        width:130px !important;
+        height:130px !important;
+        margin:5px auto;
+    }
+    /* contact form */
+    .contact-cont .contact-form{
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+        flex-wrap:wrap !important;
+    }
+    .contact-cont .contact-form form{
+        left:0px !important;
+    }
+    .contact-cont .contact-form form{
+        width:350px !important;
+    }
+}
