@@ -10,6 +10,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- magnbific-popup -->
     <link rel="stylesheet" href="css/magnific.css" />
+    <!-- sweet alert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -381,18 +383,17 @@
             </div>
           </div>
           <div class="contact-form mt-4">
-            <form action="" data-aos="fade-right" class="form-group">
+            <form id="contact-form" data-aos="fade-right" class="form-group">
               <h3 data-aos="fade-up">Get In Touch</h3>
               <div class="m-1 d-flex">
-                <input type="text" placeholder="Name" class="form-control m-1">
-                <input type="email" placeholder="Email" class="form-control m-1">
+                <input type="text" placeholder="Name" class="form-control username m-1" required>
+                <input type="email" placeholder="Email" class="form-control useremail m-1" required>
               </div>
               <div class="m-1">
-                <textarea cols="30" rows="5" class="form-control m-1" placeholder="Your Message Here...">
-                  Your message here....
+                <textarea cols="30" rows="5" class="form-control m-1 usermsg" placeholder="Your Message Here..." required>
                 </textarea>
               </div>
-              <button type="submit" class="btn btn-primary mt-2 ml-2">
+              <button type="submit" class="btn btn-primary mt-2 ml-2 contact-btn">
                 Send Message
               </button>
             </form>
@@ -413,15 +414,19 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Magnific .js -->
     <script src="js/jqueryMagnific.js"></script>
-
+    <!-- Email Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
     <script src="js/main.js"></script>
     <script>
+      (function() {
+        emailjs.init("user_SXwbm2bfwtluGBhARcTaf");
+      })();
       AOS.init({
         duration: 1200,
       });

@@ -84,4 +84,18 @@
     .contact-cont .contact-form form{
         width:350px !important;
     }
+
+    /* about page style */
+    .section .about-cont .img-cont{
+        width:100% !important;
+        margin:0px auto !important;
+        background: #f7f8fc;
+    }
+    .section .about-cont .about-main{
+        width:100% !important;
+        margin:0px auto !important;
+    }
+    .section .about-cont .about-main .body{
+        padding:2px !important;
+    }
 }
