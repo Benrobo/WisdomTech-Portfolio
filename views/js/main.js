@@ -31,37 +31,41 @@ function AnimateImg(){
 }
 AnimateImg()
 
+let username = document.querySelector(".username")
+let useremail = document.querySelector(".useremail")
+let usermsg = document.querySelector(".usermsg")
 
-function sendMail(){
-    let form = document.getElementById("contact-form");
-    let username = document.querySelector(".username")
-    let useremail = document.querySelector(".useremail")
-    let usermsg = document.querySelector(".usermsg")
+let sendbtn = document.querySelector(".contact-btn")
 
-    let sendbtn = document.querySelector(".contact-btn")
+sendbtn.onclick = (e)=>{
+    e.preventDefault();
 
-    sendbtn.onclick = (e)=>{
-        e.preventDefault();
+    if(!validate(username.value, useremail.value, usermsg.value)){
+        error()
+    }else{
+        var templateParams = {
+            name: username.value,
+            notes:usermsg.value,
+        };
 
-        validate(username.value, useremail.value, usermsg.value)
+        console.log(templateParams)
+         
+        emailjs.send('service_hd5qbz2', 'template_i2zy4a9', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+            console.log('FAILED...', error);
+        });
     }
-
 }
-sendMail()
+
 
 function validate(name, mail, msg){
     if(name == "" || mail == "" || msg == ""){
-        return error()
+        return false
     }
     else{
-        emailjs.send("service_hd5qbz2","template_i2zy4a9",{
-            from_name: name,
-            to_name: "wisdomtechsafetysolutions@gmail.com",
-            message: `
-                ${msg}
-            `,
-        });
-        success()
+        return true
     }
 }
 
