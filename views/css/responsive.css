@@ -31,6 +31,10 @@
     .navbar .btn-toggler{
         display:block !important;
     }
+    .navbar .btn-toggler .icon{
+        top:2px;
+        left:3px !important;
+    }
     .navbar .sidebar{
         display:block !important;
     }
