@@ -46,7 +46,7 @@
     .section .intro-cont .img-cont{
         width:40% !important;
         text-align: center !important;
-        left:15px !important;
+        left:0px !important;
     }
     .section .intro-cont .img-cont .img2{
         top:10rem !important;
