@@ -152,14 +152,6 @@ body{
     height:auto;
     width:50%;
 }
-.section .intro-cont .img-cont .img1{
-    width:350px;
-    height:250px;
-    background: url("../img/section/intro/1.PNG");
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-}
 .section .intro-cont .img-cont .img2{
     width:300px;
     height:200px;
@@ -167,9 +159,6 @@ body{
     background-size: cover;
     background-position: top;
     border-radius: 12px;
-    position: absolute;
-    top:10rem;
-    right:50px;
 }
 
 /* About cont */
