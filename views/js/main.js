@@ -50,7 +50,6 @@ sendbtn.onclick = (e)=>{
             to_name: "Wisdom Tech Site",
             message: usermsg.value,
         })){
-            document.querySelector(".form").reset();
             return success()
         }else{
             return error()
