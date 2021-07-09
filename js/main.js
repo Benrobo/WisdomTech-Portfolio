@@ -5,6 +5,9 @@ function toggleNav(){
     navbarbtn.onclick = ()=>{
         sidebar.classList.toggle("slide")
     }
+    sidebar.onclick = ()=>{
+        sidebar.classList.remove("slide")
+    }
 }
 
 
