@@ -436,6 +436,39 @@ body{
     border-radius: 2px;
     margin:10px auto;
 }
+.contact-cont .boxes .box .icons-container{
+    padding:12px;
+    display:flex;
+}
+.contact-cont .boxes .box .icons-container .icon-cont,
+.contact-cont .boxes .box .icons-container .links-cont{
+    float:left;
+}
+.contact-cont .boxes .box .icons-container .icon-cont{
+    width: 50px;
+}
+.contact-cont .boxes .box .icons-container .links-cont {
+    padding:0px;
+}
+.contact-cont .boxes .box .icons-container .links-cont a{
+    display:block;
+    padding:12px;
+    font-size:12px;
+}
+.contact-cont .boxes .box .icons-cont ion-icon{
+    font-size: 20px;
+    text-indent:12px;
+    padding:10px;
+}
+.contact-cont .boxes .box .icons-cont .mail-icon{
+    color:red;
+}
+.contact-cont .boxes .box .icons-cont .ins-icon{
+    color:rgb(241, 21, 150);
+}
+.contact-cont .boxes .box .icons-cont .twi-icon{
+    color:rgb(21, 160, 241);
+}
 .contact-cont .boxes .box p{
     color:#000;
 }
